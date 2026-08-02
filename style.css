@@ -1,0 +1,264 @@
+/* =========================================
+   Mafilika Business Automation Suite
+   Shared Stylesheet
+   ========================================= */
+
+:root {
+  --mafilika-navy: #0b1f3a;
+  --mafilika-navy-dark: #071528;
+  --mafilika-gold: #d4af37;
+  --mafilika-gold-light: #f0d97e;
+  --mafilika-gray-bg: #f5f6f9;
+  --mafilika-text-muted: #6c7480;
+  --mafilika-success: #1e9e6a;
+  --mafilika-danger: #d64545;
+  --mafilika-radius: 12px;
+}
+
+body {
+  background-color: var(--mafilika-gray-bg);
+  font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #1c1c1c;
+}
+
+/* ---------- Brand ---------- */
+.mafilika-brand {
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: var(--mafilika-navy);
+}
+
+.mafilika-brand span {
+  color: var(--mafilika-gold);
+}
+
+/* ---------- Navbar ---------- */
+.navbar-mafilika {
+  background-color: var(--mafilika-navy);
+}
+
+.navbar-mafilika .nav-link {
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+.navbar-mafilika .nav-link.active,
+.navbar-mafilika .nav-link:hover {
+  color: var(--mafilika-gold-light);
+}
+
+.navbar-mafilika .badge-soon {
+  font-size: 0.6rem;
+  vertical-align: middle;
+  margin-left: 4px;
+}
+
+/* ---------- Auth Pages ---------- */
+.auth-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--mafilika-navy) 0%, var(--mafilika-navy-dark) 100%);
+  padding: 24px;
+}
+
+.auth-card {
+  background: #ffffff;
+  border-radius: var(--mafilika-radius);
+  padding: 40px;
+  width: 100%;
+  max-width: 460px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.auth-card h2 {
+  color: var(--mafilika-navy);
+  font-weight: 700;
+}
+
+.auth-card .form-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.btn-mafilika {
+  background-color: var(--mafilika-gold);
+  border: none;
+  color: var(--mafilika-navy-dark);
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.btn-mafilika:hover {
+  background-color: var(--mafilika-gold-light);
+  color: var(--mafilika-navy-dark);
+  transform: translateY(-1px);
+}
+
+.btn-mafilika:disabled {
+  opacity: 0.65;
+  transform: none;
+}
+
+.auth-switch-link {
+  color: var(--mafilika-navy);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.auth-switch-link:hover {
+  color: var(--mafilika-gold);
+}
+
+/* ---------- Alerts / Feedback ---------- */
+.form-feedback {
+  display: none;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.9rem;
+  margin-bottom: 16px;
+}
+
+.form-feedback.error {
+  display: block;
+  background-color: #fbe9e9;
+  color: var(--mafilika-danger);
+  border: 1px solid #f3caca;
+}
+
+.form-feedback.success {
+  display: block;
+  background-color: #e7f7f0;
+  color: var(--mafilika-success);
+  border: 1px solid #bfe9d6;
+}
+
+/* ---------- Dashboard Layout ---------- */
+.dashboard-wrapper {
+  padding: 32px 0 64px;
+}
+
+.dashboard-header h1 {
+  color: var(--mafilika-navy);
+  font-weight: 700;
+}
+
+.dashboard-header p {
+  color: var(--mafilika-text-muted);
+}
+
+/* ---------- Stat Cards ---------- */
+.stat-card {
+  background: #ffffff;
+  border-radius: var(--mafilika-radius);
+  padding: 22px;
+  box-shadow: 0 6px 18px rgba(11, 31, 58, 0.06);
+  height: 100%;
+  border-left: 4px solid var(--mafilika-gold);
+}
+
+.stat-card .stat-label {
+  color: var(--mafilika-text-muted);
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
+
+.stat-card .stat-value {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--mafilika-navy);
+}
+
+/* ---------- Coming Soon Module Cards ---------- */
+.module-card {
+  background: #ffffff;
+  border-radius: var(--mafilika-radius);
+  padding: 24px;
+  height: 100%;
+  box-shadow: 0 6px 18px rgba(11, 31, 58, 0.06);
+  position: relative;
+  opacity: 0.85;
+}
+
+.module-card .badge-soon {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+
+.module-card h5 {
+  color: var(--mafilika-navy);
+  font-weight: 700;
+}
+
+.module-card p {
+  color: var(--mafilika-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 0;
+}
+
+/* ---------- Profile Panel ---------- */
+.profile-panel {
+  background: #ffffff;
+  border-radius: var(--mafilika-radius);
+  padding: 24px;
+  box-shadow: 0 6px 18px rgba(11, 31, 58, 0.06);
+}
+
+.profile-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: var(--mafilika-navy);
+  color: var(--mafilika-gold-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.profile-label {
+  color: var(--mafilika-text-muted);
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-value {
+  font-weight: 600;
+  color: #1c1c1c;
+  margin-bottom: 14px;
+}
+
+/* ---------- Loading Spinner ---------- */
+.mafilika-spinner {
+  display: none;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 8px;
+}
+
+/* ---------- Landing Page ---------- */
+.landing-hero {
+  background: linear-gradient(135deg, var(--mafilika-navy) 0%, var(--mafilika-navy-dark) 100%);
+  color: #fff;
+  padding: 100px 0;
+}
+
+.landing-hero h1 {
+  font-weight: 800;
+}
+
+.landing-hero .text-gold {
+  color: var(--mafilika-gold);
+}
+
+.landing-hero p.lead {
+  color: rgba(255, 255, 255, 0.85);
+}
