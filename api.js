@@ -15,7 +15,7 @@ const MAFILIKA_CONFIG = {
   // Local development (FastAPI default): http://127.0.0.1:8000
   // After deploying the backend to Render/Railway, replace this with
   // your live backend URL, e.g. "https://mafilika-api.onrender.com"
-  API_BASE_URL: "http://127.0.0.1:8000",
+  API_BASE_URL: "https://mafilika-automation-suite-backend.onrender.com",
 };
 
 const TOKEN_KEY = "mafilika_token";
@@ -67,7 +67,7 @@ async function apiRequest(endpoint, options = {}) {
     headers["Authorization"] = `Bearer ${token}`;
   }
 
-  const response = await fetch(`${MAFILIKA_CONFIG.API_BASE_URL}${endpoint}`, {
+  const response = await fetch(`${MAFILIKA_CONFIG.https://mafilika-automation-suite-backend.onrender.com}${endpoint}`, {
     ...options,
     headers,
   });
